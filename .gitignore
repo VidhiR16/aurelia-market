@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.env
+.env.local
+.vscode/
+.DS_Store
+npm-debug.log
+yarn-error.log
+coverage/
+.idea/
+*.local
+# Optional lockfiles
+# package-lock.json
+# yarn.lock
