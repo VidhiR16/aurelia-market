@@ -49,7 +49,7 @@ export default function ProductManager() {
                     </div>
                   </td>
                   <td className="px-6 py-4 capitalize">{product.category}</td>
-                  <td className="px-6 py-4">${product.price.toFixed(2)}</td>
+                  <td className="px-6 py-4">₹{product.price.toFixed(2)}</td>
                   <td className="px-6 py-4">
                     <span className="inline-flex items-center rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800 dark:bg-green-900/30 dark:text-green-400">
                       In Stock

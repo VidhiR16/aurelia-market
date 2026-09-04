@@ -35,17 +35,17 @@ export default function Checkout() {
       }
 
       const normalizedCard = cardNumber.replace(/\s+/g, '');
-      if (normalizedCard.length < 13 || normalizedCard.length > 19 || !/^\d+$/.test(normalizedCard)) {
+      if (normalizedCard.length < 13 || normalizedCard.length > 19 || !/^\d+₹/.test(normalizedCard)) {
         setPaymentError('Please enter a valid card number.');
         return;
       }
 
-      if (!/^\d{2}\/\d{2}$/.test(cardExpiry)) {
+      if (!/^\d{2}\/\d{2}₹/.test(cardExpiry)) {
         setPaymentError('Enter expiry date as MM/YY.');
         return;
       }
 
-      if (!/^\d{3,4}$/.test(cardCvc)) {
+      if (!/^\d{3,4}₹/.test(cardCvc)) {
         setPaymentError('Enter a valid CVC.');
         return;
       }
@@ -204,7 +204,7 @@ export default function Checkout() {
                     <h4 className="text-sm font-medium dark:text-white line-clamp-1">{item.name}</h4>
                     <p className="text-xs text-gray-500">Qty: {item.quantity}</p>
                   </div>
-                  <span className="text-sm font-medium dark:text-white">${(item.price * item.quantity).toFixed(2)}</span>
+                  <span className="text-sm font-medium dark:text-white">₹{(item.price * item.quantity).toFixed(2)}</span>
                 </div>
               ))}
             </div>
@@ -212,7 +212,7 @@ export default function Checkout() {
             <div className="space-y-3 border-t border-gray-200 pt-4 text-sm text-gray-600 dark:border-gray-800 dark:text-gray-300">
               <div className="flex justify-between">
                 <span>Subtotal</span>
-                <span>${cartTotal.toFixed(2)}</span>
+                <span>₹{cartTotal.toFixed(2)}</span>
               </div>
               <div className="flex justify-between">
                 <span>Shipping</span>
@@ -220,11 +220,11 @@ export default function Checkout() {
               </div>
               <div className="flex justify-between">
                 <span>Tax</span>
-                <span>${(cartTotal * 0.08).toFixed(2)}</span>
+                <span>₹{(cartTotal * 0.08).toFixed(2)}</span>
               </div>
               <div className="mt-4 flex justify-between border-t border-gray-200 pt-4 text-lg font-bold text-gray-900 dark:border-gray-800 dark:text-white">
                 <span>Total</span>
-                <span>${(cartTotal * 1.08).toFixed(2)}</span>
+                <span>₹{(cartTotal * 1.08).toFixed(2)}</span>
               </div>
             </div>
           </div>

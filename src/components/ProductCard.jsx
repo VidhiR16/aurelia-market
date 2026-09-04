@@ -36,9 +36,9 @@ export default function ProductCard({ product }) {
         <p className="mt-1 text-sm text-gray-500 dark:text-gray-400 capitalize">{product.category}</p>
         <div className="mt-auto pt-4 flex items-center justify-between">
           <div className="flex flex-col">
-            <span className="text-lg font-bold">${product.price.toFixed(2)}</span>
+            <span className="text-lg font-bold">₹{product.price.toFixed(2)}</span>
             {product.originalPrice && (
-              <span className="text-sm text-gray-400 line-through">${product.originalPrice.toFixed(2)}</span>
+              <span className="text-sm text-gray-400 line-through">₹{product.originalPrice.toFixed(2)}</span>
             )}
           </div>
           <Button size="icon" onClick={handleAddToCart} className="rounded-full shrink-0">

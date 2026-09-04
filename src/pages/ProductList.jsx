@@ -116,8 +116,8 @@ export default function ProductList() {
               <div className="space-y-4">
                 <input type="range" min="0" max="1000" className="w-full accent-primary-600" />
                 <div className="flex justify-between text-sm text-gray-500">
-                  <span>$0</span>
-                  <span>$1000+</span>
+                  <span>0</span>
+                  <span>1000+</span>
                 </div>
               </div>
             </div>

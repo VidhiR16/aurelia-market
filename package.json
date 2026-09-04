@@ -8,7 +8,7 @@
   
   "type": "module",
   
-  "homepage": "https://vidhir16.github.io/aurelia-market/",
+  "homepage": "https://vidhir16.github.io/aurelia-market",
   
   "scripts": {
   
@@ -28,7 +28,7 @@
   "predeploy": "npm run build",
   
     
-  "deploy": "gh-pages -d docs"
+  "deploy": "gh-pages -d dist"
   
   },
   

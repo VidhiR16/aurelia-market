@@ -19,7 +19,7 @@ export default function Dashboard() {
             <DollarSign className="h-5 w-5 text-gray-400" />
           </div>
           <div className="mt-4">
-            <span className="text-3xl font-bold dark:text-white">${adminAnalytics.totalRevenue.toLocaleString()}</span>
+            <span className="text-3xl font-bold dark:text-white">₹{adminAnalytics.totalRevenue.toLocaleString()}</span>
             <span className="ml-2 flex items-center text-sm font-medium text-green-600 dark:text-green-400">
               <TrendingUp className="mr-1 h-4 w-4" /> +12.5%
             </span>
@@ -55,7 +55,7 @@ export default function Dashboard() {
             <CreditCard className="h-5 w-5 text-gray-400" />
           </div>
           <div className="mt-4">
-            <span className="text-3xl font-bold dark:text-white">${(adminAnalytics.totalRevenue / adminAnalytics.totalOrders).toFixed(2)}</span>
+            <span className="text-3xl font-bold dark:text-white">₹{(adminAnalytics.totalRevenue / adminAnalytics.totalOrders).toFixed(2)}</span>
             <span className="ml-2 flex items-center text-sm font-medium text-green-600 dark:text-green-400">
               <TrendingUp className="mr-1 h-4 w-4" /> +2.3%
             </span>
@@ -97,7 +97,7 @@ export default function Dashboard() {
                   <p className="text-sm text-gray-500">{order.customer} &bull; {order.date}</p>
                 </div>
                 <div className="text-right">
-                  <p className="font-bold dark:text-white">${order.total.toFixed(2)}</p>
+                  <p className="font-bold dark:text-white">₹{order.total.toFixed(2)}</p>
                   <span className={`inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium mt-1
                     ${order.status === 'Delivered' ? 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400' : 
                       order.status === 'Processing' ? 'bg-amber-100 text-amber-800 dark:bg-amber-900/30 dark:text-amber-400' : 

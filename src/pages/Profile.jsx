@@ -70,15 +70,15 @@ export default function Profile() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-gray-700 dark:text-gray-300">First Name</label>
-                    <Input defaultValue="John" />
+                    <Input defaultValue="Vidhi" />
                   </div>
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-gray-700 dark:text-gray-300">Last Name</label>
-                    <Input defaultValue="Doe" />
+                    <Input defaultValue="Raval" />
                   </div>
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-gray-700 dark:text-gray-300">Email Address</label>
-                    <Input defaultValue="john.doe@example.com" type="email" />
+                    <Input defaultValue="vidhi.raval@example.com" type="email" />
                   </div>
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-gray-700 dark:text-gray-300">Phone Number</label>

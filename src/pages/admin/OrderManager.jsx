@@ -28,7 +28,7 @@ export default function OrderManager() {
                   <td className="px-6 py-4 font-medium text-gray-900 dark:text-white">{order.id}</td>
                   <td className="px-6 py-4">{order.customer}</td>
                   <td className="px-6 py-4">{order.date}</td>
-                  <td className="px-6 py-4 font-medium text-gray-900 dark:text-white">${order.total.toFixed(2)}</td>
+                  <td className="px-6 py-4 font-medium text-gray-900 dark:text-white">₹{order.total.toFixed(2)}</td>
                   <td className="px-6 py-4">
                     <select 
                       defaultValue={order.status}

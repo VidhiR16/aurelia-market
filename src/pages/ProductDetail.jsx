@@ -85,9 +85,9 @@ export default function ProductDetail() {
             <span className="text-sm text-gray-500">{product.reviews} reviews</span>
           </div>
           <div className="mb-6 flex items-end gap-3">
-            <span className="text-3xl font-bold text-gray-900 dark:text-white">${product.price.toFixed(2)}</span>
+            <span className="text-3xl font-bold text-gray-900 dark:text-white">₹{product.price.toFixed(2)}</span>
             {product.originalPrice && (
-              <span className="text-lg text-gray-500 line-through mb-1">${product.originalPrice.toFixed(2)}</span>
+              <span className="text-lg text-gray-500 line-through mb-1">₹{product.originalPrice.toFixed(2)}</span>
             )}
           </div>
           <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
@@ -170,7 +170,7 @@ export default function ProductDetail() {
 
           <div className="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400">
             <Truck className="h-5 w-5" />
-            <span>Free delivery on orders over $100. Expected delivery 2-4 business days.</span>
+            <span>Free delivery on orders over 10000. Expected delivery 2-4 business days.</span>
           </div>
         </div>
       </div>
